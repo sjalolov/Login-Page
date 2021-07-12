@@ -14,8 +14,9 @@ const Loginpage = () => (
         <h3>Have an Account</h3>
           <button type="button" className="login-btn">Login</button>
         </div>
-        <div className="form form-hidden">
-          {/* Log in form Starts */}
+      <div className="form">
+        {/* Log in form Starts */}
+        <div className="login-form ">
           <h3>Login</h3>
           <div className="form-group">
             <input type="text" placeholder="Email Address*" className="form-control"></input>
@@ -31,10 +32,10 @@ const Loginpage = () => (
             <button type="buttom" className="submit-btn">Login</button>
             <p><a href="//#region" className="register-btn">Register</a>|<a href="//#region" className="lost-pass-btn">Lost Your Password?</a></p>
         </div>
-    {/* Log in form Ends */}
-    {/* Register form Starts */}
-      <div className="form">
-        <h3>Register</h3>
+      {/* Log in form Ends */}
+      {/* Register form Starts */}
+        <div className="register-form form-hidden">
+          <h3>Register</h3>
           <div className="form-group">
             <input type="text" placeholder="First Name*" className="form-control"></input>
           </div>
@@ -47,12 +48,22 @@ const Loginpage = () => (
           <div className="form-group">
             <input type="password" placeholder="Password*" className="form-control"></input>
           </div>
-          <div>
             <button type="buttom" className="submit-btn">Register</button>
             <p><a href="//#region" className="login-btn">Login</a>|<a href="//#region" className="lost-pass-btn">Lost Your Password?</a></p>
+        </div>
+            {/* Registerform Ends */}
+            {/* Lost Password form Starts */}
+        <div className="register-form form-hidden">
+          <h3>Lost Your Password?</h3>
+          <h5>Check you mailbox to create new password.</h5>
+          <div className="form-group">
+            <input type="text" placeholder="Email Address*" className="form-control"></input>
           </div>
-        {/* Register form Ends */}
-       </div>
+            <button type="buttom" className="submit-btn">Reset Password</button>
+            <p><a href="//#region" className="login-btn">Login</a>|<a href="//#region" className="register-btn">Register</a></p>
+        </div>
+            {/* Registerform Ends */}
+      </div>
       </div>
     </div>
  </body>

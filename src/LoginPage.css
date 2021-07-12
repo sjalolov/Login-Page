@@ -92,9 +92,9 @@ body {
         margin:0 0 30px;
 
     }
-    .login-page .box .form .login-form{
-        flex:0 0 100%;
-        max-width: 100%;
+    .login-page .box .form .login-form
+    .login-page .box .form .register-form{
+        background-color: red;
     }
     .login-page .box .form .form-group{
         margin-bottom: 20px;;
@@ -141,6 +141,13 @@ body {
         margin-top: 20px;
         text-align: center;
         
+    }
+
+    .login-page .box .form h5{
+        font-size: 16px;
+        color:#555555;
+        margin:0 0 30px;
+        font-weight: normal;
     }
     .login-page .box .form p a{
        font-size: 16px;

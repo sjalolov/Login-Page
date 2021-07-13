@@ -24,6 +24,8 @@ body {
       /* later add image for backgroun */
       background-color: aqua; 
       background-size: cover;
+      background-position: -160px center;
+      background-repeat: repeat-x;
       flex: 0 0 700px;
       max-width: 700px;
       min-height: 480px;
@@ -32,6 +34,10 @@ body {
       flex-wrap: wrap;
       position: relative;
       z-index: 1;
+  }
+
+  .login-page .box.box.slide-active{
+    background-position: 160px center;
   }
 
   .login-page .box::before{
@@ -53,6 +59,7 @@ body {
       justify-content:center;
       align-items:center;
       flex-direction: column;
+      padding: 40px 0;
     }
 
     .login-page .box .left h3,
@@ -72,6 +79,19 @@ body {
         cursor: pointer;
         border-radius: 25px;
     }
+    .login-page .box .left .register-btn:hover{
+        background-color:rgb(0, 212, 212);
+        transition: 0.5s ease-in-out;
+    }
+    .login-page .box .right .login-btn:hover{
+        background-color: rgb(0, 212, 212);
+        transition: 0.5s ease-in-out;
+    }
+
+    .login-page .box .left .register-btn:focus,
+    .login-page .box .right .login-btn:focus{
+        outline: none;
+    }
 
     .login-page .box .form{
         position: absolute;
@@ -84,6 +104,11 @@ body {
         align-items: center;
         flex-direction: column;
         justify-content: center;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .login-page .box.slide-active .form{
+        right: 50%;
     }
 
     .login-page .box .form h3{
@@ -92,10 +117,12 @@ body {
         margin:0 0 30px;
 
     }
+    .login-page .box .form .lost-password-form,
     .login-page .box .form .login-form
     .login-page .box .form .register-form{
-        background-color: red;
+        transition: all 0.5s ease-in-out;
     }
+    
     .login-page .box .form .form-group{
         margin-bottom: 20px;;
     }
@@ -131,9 +158,8 @@ body {
         margin-top: 10px;
         font-size: 16px;
         cursor: pointer;
-
-
     }
+    
     .login-page .box .form .submit-btn:focus{
         outline:none;
     }
@@ -164,3 +190,44 @@ body {
         overflow: hidden;
      }
 
+     /* Responsive */
+
+     @media(max-width: 767px){
+         .login-page .box{
+             flex: 0 0 100%;
+             max-width: 100%;
+         }
+
+     }
+
+     @media(max-width: 575px){
+        .login-page .box .form{
+            width:100%;
+            position: relative;
+            right: auto;
+            top: auto;
+            height: auto;
+
+        }
+        .login-page .box,
+        .login-page .box.slide-active{
+            background-position: center;
+        }
+        .login-page .box .left h3, .login-page .box .right h3{
+            font-size: 16px;
+
+        }
+        .login-page .box.slide-active .form{
+            right: auto;
+        }
+    }
+
+    @media(max-width: 334px){
+        .login-page .box .left h3, .login-page .box .right h3{
+            font-size: 14px;
+            transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease;
+
+        }
+
+    }

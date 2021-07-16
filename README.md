@@ -17,3 +17,5 @@ You will also see any lint errors in the console.
 ### Codes that I used to make this happen!!! 
 https://www.remotestack.io/react-bootstrap-login-register-ui-templates/
 
+Link to the Demo
+https://login-register-lostpassword-page.netlify.app/

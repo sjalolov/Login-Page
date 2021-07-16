@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import './LoginPage.css'
+import './main.css'
 
 export default class Register extends Component {
     render() {
@@ -8,7 +8,7 @@ export default class Register extends Component {
     <div className="login-page">
       <div className="box">
       <div className="left">
-      <h3>Already have an account</h3>
+      <h3>Already have an account?</h3>
       <a href="/sign-in" className="register-btn">LogIn</a>
         </div>
         <div className="form">

@@ -80,6 +80,7 @@ body {
         font-size: 16px;
         cursor: pointer;
         border-radius: 25px;
+        text-decoration: none;
     }
     .login-page .box .left .register-btn:hover{
         background: rgb(2,0,36);

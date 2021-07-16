@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import './LoginPage.css'
+import './main.css'
 
 export default class LostPassword extends Component {
     render() {
@@ -8,7 +8,7 @@ export default class LostPassword extends Component {
     <div className="login-page">
       <div className="box">
       <div className="left">
-      <h3>Have an account</h3>
+      <h3>Create an account?</h3>
       <a href="/sign-up" className="register-btn">Register</a>
         </div>
         <div className="form">

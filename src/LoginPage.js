@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './LoginPage.css';
 
 const Loginpage = () => (
@@ -16,7 +17,7 @@ const Loginpage = () => (
         </div>
       <div className="form">
         {/* Log in form Starts */}
-        <div className="login-form ">
+        <div className="login-form form-hidden">
           <h3>LogIn</h3>
           <div className="form-group">
             <input type="text" placeholder="Email Address*" className="form-control"></input>
@@ -34,7 +35,7 @@ const Loginpage = () => (
         </div>
       {/* Log in form Ends */}
       {/* Register form Starts */}
-        <div className="register-form form-hidden">
+        <div className="register-form ">
           <h3>Register</h3>
           <div className="form-group">
             <input type="text" placeholder="First Name*" className="form-control"></input>
@@ -48,7 +49,7 @@ const Loginpage = () => (
           <div className="form-group">
             <input type="password" placeholder="Password*" className="form-control"></input>
           </div>
-            <button type="buttom" className="submit-btn">Register</button>
+            <button type="buttom" className="submit-btn" >Register</button>
             <p><a href="//#region" className="login-btn">Login |</a> <a href="//#region" className="lost-pass-btn">Lost Your Password?</a></p>
         </div>
             {/* Registerform Ends */}
@@ -66,7 +67,6 @@ const Loginpage = () => (
       </div>
       </div>
     </div>
-    <script src="Statechanger.js"></script>
  </body>
 
 );
